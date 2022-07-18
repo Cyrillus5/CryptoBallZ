@@ -1,0 +1,887 @@
+body {
+    background:white;
+    font-family: 'Work Sans', sans-serif;
+    font-size :62,5%;
+    --orange : #F7931A;  
+    --gristexte : #646465;
+    --gristitreminiature : #545454;
+    --grisbackminiature : #f9f9f9;
+     color: #646465;
+     position : relative;
+}
+
+.container{
+    margin:0.3rem;
+    margin-top : 0px;        
+}
+
+
+header{
+    height: 5rem;
+    border-bottom: 1px solid lightgray; 
+    background-color: white;
+    position: fixed;
+    width: 100%;  
+    
+}
+
+.header-logo{
+    width: 10rem;
+    left: 1rem;
+    top : 0px;
+    position:fixed;
+}
+
+.nav{
+    margin-left:9rem;
+    margin-right :0.5rem; 
+}
+
+.nav-links{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    min-width: 80%;
+    margin-top: 3rem;  
+}
+
+.nav-item{
+    text-align: right;
+}
+
+.nav-item-link{
+    padding : 10px;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin:0.2rem;
+    margin-top: 10rem;
+    font-size: 1.1rem;
+    color: #646465;
+}
+
+.nav-item-link > strong{
+    font-weight: bold;
+}
+
+.nav-item-link:hover{
+    color: #F7931A;
+    font-weight: bold;    
+}
+
+.nav-item-link--bitcoin{
+    color:white;
+    font-weight: bold;
+    background:var(--orange);
+    border-radius: 1rem 1rem 1rem 1rem;
+    transition:all, 0s, 0.3s;
+}
+
+.nav-item-link--bitcoin:hover{
+    color:var(--orange);
+    background: white ;
+    border-radius: 1rem 1rem 1rem 1rem;
+}
+
+.nav-links-sub{
+    overflow :hidden;
+    max-height : 0 ;
+    max-width: 0;
+}
+
+.nav-item-link-sub:hover{
+    color: var(--orange);
+    font-weight: bold;
+}
+
+.nav-item-sub{
+    padding-top:20px;
+    background-color: white;
+}
+
+.nav-item-link-sub{
+    font-size: 1rem;
+    color: #646465;  
+}
+
+.nav-item--scroll:hover .nav-links-sub{
+    overflow :visible;
+    max-height : 50px ;
+    max-width: 20rem;
+}
+
+.header-img-scroll{
+    position:fixed;
+    top: 2rem;
+    right: 2rem;
+    width:3rem;
+    display:none;
+}
+
+.nav-mobile{
+    display:none;    
+}
+
+/*Configuration menu pour mobile*/
+@media (max-width: 900px){
+    .nav-item{
+        display:none;
+        max-height : 0px ;
+        max-width: 0rem;
+    }
+
+    .mobile:hover>.nav-mobile,.mobile:active>.nav-mobile{
+        display:block;
+        display:flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: right;
+        margin-top: 2.6rem;
+        margin-right:  2rem;
+        padding-top:0.5rem;
+    }
+
+    .header-img-scroll{
+        display:block;
+    }
+
+    .header-img-scroll:hover
+    .nav-item{
+        display:block;
+        max-height : 50rem ;
+        max-width: 50rem;
+    }
+
+    .nav-mobile{
+        background-color: #f3f3f3;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    .nav-item-mobile{
+        text-align: right;
+        margin-top: 0.8rem;
+    }
+   
+    .nav-item-mobile-link{
+        color:#646465;
+        padding: 1.6rem;        
+    }
+
+    .nav-item-mobile-link > strong{
+        font-weight: bold;
+    }
+
+    .nav-item-mobile-link:hover{
+        color: var(--orange);
+    }
+
+    .nav-links-mobile-sub{
+        display:none;
+        max-height : 0 ;
+        max-width: 0;
+    }
+
+    .nav-item-mobile--scroll:hover .nav-links-mobile-sub{
+        display:inline;
+        padding-right: 2rem;
+
+    }
+
+    .nav-item-mobile--scroll:hover .nav-item--mobile-sub{
+        margin-right: 1.8rem;
+        padding-top: 1rem;
+        color:#646465;
+        font-size: 0.9rem;
+    }
+
+    .nav-item-mobile-link-sub:hover{
+        color : var(--orange);
+    }
+
+    .nav-item-link-mobile--bitcoin{
+        color:var(--orange);
+        font-weight: bold; 
+    }
+}
+
+
+/* Mis en forme du main de l'accueil */
+
+.mainHome-header{
+    display : flex;
+    flex-direction: row;
+    padding-top: 5rem;
+    border-bottom: 1px solid lightgray;    
+}
+
+.mainHome-header_img{
+    max-width: 30%;
+    height: auto;    
+}
+
+.mainHome-header_img-picture{
+    width: 98%;
+    min-width: 18rem;
+    
+    padding: 1.5rem;
+    margin-top: 1rem;
+    
+}
+
+.mainHome-header_container{
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 70%;
+    padding-top: 3rem;
+}
+
+.mainHome-header_container-title{
+    color:var(--orange);
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin : 1rem;
+}
+
+.mainHome-header_container-presentation{
+    text-align: justify;
+    margin : 1rem;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.mainHome-header_container-presentation > strong{
+    font-weight: bolder;
+    color: var(--orange);
+}
+
+
+/* Lettrine */
+.mainHome-header_container-presentation::first-letter{
+    font-size: 3rem;    
+}
+
+.mainHome-body{
+    border-bottom: 1px solid lightgray;
+}
+
+.mainHome-body-title{
+    color: var(--orange) ;
+    font-size: 1rem;
+    font-weight:600;
+    text-align: center;
+    margin : 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.mainHome-buyBitcoin{
+    border-bottom: 1px solid lightgray;
+}
+
+/* Mise en forme du main de l'accueil _ pour mobile */
+@media (max-width: 900px){
+    .mainHome-header_img-picture{
+        display: none;        
+    }
+    }
+
+/*Mise en forme pour pages articles*/
+.mainHome-header_article{
+    display : flex;
+    flex-direction: column;
+    padding-top: 5rem;
+    border-bottom: 1px solid lightgray;
+}
+
+.mainHome-header_article_img{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 3rem;  
+    padding-top : 2rem;
+    padding-bottom: 0.5rem;      
+}
+
+.mainHome-header_article_img-picture{
+    width: 98%;
+    min-width: 18rem;         
+}
+
+.mainHome-header_article_container{
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    padding: 3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;       
+}
+
+.mainHome-header_article_container--buybitcoin{
+    display: flex;    
+}
+
+.mainHome-header_article_img-picture--buybitcoin{
+    width: 40%;
+}
+
+.mainHome-header_article_container-title{
+    color:var(--orange);
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin : 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-align: right;
+}
+
+.mainHome-header_article-presentation{
+    text-align: justify;
+    margin : 1rem;
+    margin-top : 0.5rem;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.mainHome-header_article-presentation > strong{
+    font-weight: bold;
+}
+
+
+.mainHome-header_article-presentation--buybitcoin{
+    width: 57%;
+}
+
+/* Mise en forme header pour page Comment acheter du bicoin ? _ pour mobile */
+@media (max-width: 900px){
+    .mainHome-header_article_container--buybitcoin{
+        display: flex;  
+        flex-direction: column;
+    } 
+    .mainHome-header_article_img-picture--buybitcoin{
+        width: 97%;
+    }
+    .mainHome-header_article-presentation--buybitcoin{
+        width: 97%;
+    }   
+    }
+
+
+.mainHome-header_article-presentation::first-letter{
+    font-size: 3rem;  
+}
+
+.mainHome-publication{
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    padding: 3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;   
+    border-bottom: 1px solid lightgray;    
+}
+
+.mainHome-publication_title{
+    color:var(--gristexte);
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin : 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.mainHome-publication_subtitle{
+    color:var(--orange);
+    font-style: italic;
+    text-align: right;
+    margin : 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.mainHome-publication_contain{
+    text-align: justify;
+    margin : 1rem;
+    margin-top : 0.5rem;
+    font-size: 1rem;
+    line-height: 2rem;    
+}
+
+.mainHome-publication_contain--conclusion{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.mainHome-publication_contain--first::first-letter{
+    font-size: 3rem; 
+}
+
+.mainHome-publication_contain--italic{
+    font-style: italic;
+    text-align: center;
+}
+
+.mainHome-publication_contain-intro{
+    text-align: justify;
+    font-style: italic;
+    font-weight: bold;
+    margin : 1rem;
+    margin-top : 0.5rem;
+    font-size: 1rem;
+    line-height: 2rem;     
+}
+
+.mainHome-publication_contain > strong {
+    font-weight: bold;
+}
+
+.mainHome-publication_contain-portraitPicture{
+    margin: auto;
+    max-width: 30%;
+    margin-bottom: 1rem;
+}
+
+.mainHome-publication_contain-portraitPicture-link{
+    display: flex;
+    margin: auto;
+    margin-bottom: 0.5rem;
+}
+
+
+
+@media (max-width: 1100px){
+    .mainHome-publication_contain-portraitPicture{
+        margin: auto;
+        max-width: 50%;
+        margin-bottom: 1rem;
+    }     
+    }
+
+@media (max-width: 800px){
+    .mainHome-publication_contain-portraitPicture{
+        margin: auto;
+        max-width: 65%;
+        margin-bottom: 1rem;
+    }     
+    }
+
+    .mainHome-publication_contain-landPicture{
+        margin: auto;
+        max-width: 70%;
+        margin-bottom: 1rem;
+    }
+    
+    
+@media (max-width: 1100px){
+    .mainHome-publication_contain-landPicture{
+        margin: auto;
+        max-width: 98%;
+        margin-bottom: 1rem;
+    }     
+     }
+    
+@media (max-width: 800px){
+    .mainHome-publication_contain-landPicture{
+        margin: auto;
+        max-width: 98%;
+        margin-bottom: 1rem;
+    }     
+    }
+    
+.mainHome-publication_contain-img{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-repeat: no-repeat;
+}
+
+.mainHome-publication_contain-img--microstrategy{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image : url("../img/le bitcoin/MicroStrategy_Bitcoin.jfif");
+    background-repeat: no-repeat;
+}
+
+.mainHome-publication_contain-img-picture{
+    margin: auto;
+    max-width: 20rem;
+}
+
+.copy-twitter-tweet{
+    margin: auto;
+    margin-left: 1rem;
+    width: 8%;    
+}
+
+.mainHome-publication_contain-media{
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Mise en forme des vues YouTube _ pour mobile */
+@media (max-width: 900px){
+    .mainHome-publication_contain-media{
+        width: 100%;
+        margin: auto;
+    }      
+    }
+
+.mainHome-publication_contain-pictureLink{
+    display: flex;
+    justify-content: center;
+}
+
+.mainHome-publication_contain-list{
+    list-style-type: disc;
+    text-align: justify;
+    margin : 1rem;
+    margin-top : 0rem;
+    margin-left: 2rem;
+    font-size: 1rem;
+    line-height: 2rem; 
+}
+
+.mainHome-publication_contain-list > strong{
+    font-weight: bold;
+}
+
+.moreInfo{
+    font-style: italic;
+    font-weight: bold;
+    text-align: justify;
+    margin : 1rem;
+    margin-top : 0.5rem;    
+    font-size: 1rem;
+    line-height: 2rem;  
+}
+
+
+/* Mise en forme des miniatures actualités */
+
+.actuInfoMiniature{
+    margin : 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+#actuInfoMiniatureHome{
+    margin : 3rem;
+    margin-bottom: 0.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    justify-content: center;    
+}
+
+.actuInfoMiniature-news{
+    width: 30%;
+    background-color: var(--grisbackminiature);
+    overflow:auto;
+    margin : 0.5rem;
+}
+
+.actuInfoMiniature-news:hover{    
+    background-color: #ededed;    
+}
+
+.actuInfoMiniature-news_img{
+    display: block;
+    margin :auto;
+    width : 92%;    
+    margin-bottom: 1rem;
+    margin-top: 1rem;    
+}
+
+.actuInfoMiniature-news_container-title{
+    font-weight: bold;
+    text-align: center;
+    margin : 0.5rem;    
+    margin-bottom: 1.7rem;
+    font-size: 1.1rem;
+    color: var(--gristitreminiature);
+}
+
+.actuInfoMiniature-news_container-text{
+    text-align: justify;
+    margin: 1rem;
+    padding-bottom: 0.5rem;
+    line-height: 1.5rem;
+}
+
+.actuInfoMiniature-news_container-text > strong{
+    font-weight: bold;
+}
+
+.newsLink{
+    display: flex;    
+    justify-content: center;
+    text-align: center;
+    color: var(--orange);
+    font-size: 1.1rem;    
+    margin-bottom: 10px;
+    transition: width 2s, height 2s, background-color 1s, transform 2s;  
+}
+
+.newsLink:hover{
+    background-color: var(--orange); 
+    color: white;     
+}
+
+.newsLink > p{
+    border : 1px solid var(--orange);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+/* Mise en forme des miniatures actualités _ pour mobile */
+@media (max-width: 900px){
+    .actuInfoMiniature-news{
+        width: 90%;
+    }
+    
+    .actuInfoMiniature-news_img{
+        width : 95%;
+    }        
+    }
+
+/* Mise en forme des miniatures 'Comment acheter du Bitcoin ?' */
+#buyBitcoinMiniature{
+    margin : 3rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    justify-content: center;    
+}
+
+.buyBitcoinMiniature_vignette{
+    width: 30%;
+    background-color: white;
+    overflow:auto;
+    margin : 0.3rem;
+}
+
+.buyBitcoinMiniature_vignette:hover{
+    background-color: var(--grisbackminiature);   
+}
+ 
+.buyBitcoinMiniature_vignette-img{
+    display: block;
+    margin :auto;
+    width : 92%;    
+    margin-bottom: 1rem;
+    margin-top: 1rem;    
+}
+
+.buyBitcoinMiniature_vignette-title{
+    font-weight: bold;
+    text-align: center;
+    margin : 0.5rem;    
+    margin-bottom: 1.7rem;
+    font-size: 1.1rem;
+    color: var(--gristitreminiature);
+}
+
+.buyBitcoinMiniature_vignette-text{
+    text-align: justify;
+    margin: 1rem;
+    padding-bottom: 0.5rem;
+    line-height: 1.5rem;
+}
+
+/* Mise en forme des miniatures 'Comment acheter du Bitcoin ?' _ pour mobile */
+@media (max-width: 900px){
+    .buyBitcoinMiniature_vignette{
+        width: 90%;
+    }
+    
+    .buyBitcoinMiniature_vignette-img{
+        width : 95%;
+    }        
+    }
+
+/* Section "Les Influenceurs" */
+.mainHome_influenceurs-title{
+    color : var(--gristexte);
+    font-weight: bold;
+}
+.mainHome_influenceurs-container{
+    margin : 3rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    justify-content: center;  
+    border-bottom: 1px solid lightgray;
+}
+
+.mainHome_influenceurs-vignette{
+    width: 30%;
+    background-color: white;
+    overflow:auto;
+    margin : 0.3rem;
+}
+.mainHome_influenceurs-vignette-img{
+    display: block;
+    margin :auto;
+    width : 20%;    
+    margin-bottom: 1rem;
+    margin-top: 0.5rem; 
+}
+
+.mainHome_influenceurs-vignette-text{
+    text-align: center;
+    font-style: italic;
+    margin: 1rem;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    line-height: 1.1rem;
+}
+
+.mainHome_influenceurs-vignette-title{
+    font-weight: bold;
+    text-align: center;
+    margin : 0.5rem;    
+    margin-bottom: 1.7rem;
+    font-size: 1.1rem;
+    color: var(--gristitreminiature);
+}
+
+/* Section "Les Influenceurs" __ pour mobile */
+/* Mise en forme des miniatures 'Comment acheter du Bitcoin ?' _ pour mobile */
+@media (max-width: 900px){
+    .mainHome_influenceurs-vignette{
+        width: 90%;
+    }
+    
+    .mainHome_influenceurs-vignette-img{
+        width : 20%;
+    }        
+    }
+
+/* Section Warning */
+.warningText{
+    text-align: justify;
+    color: white;
+    font-size: 00.7rem;
+    background-color: rgb(184, 183, 183);
+    padding: 1rem;
+    margin:1rem;
+    padding-bottom: 0.5rem;
+    line-height: 1.5rem;
+}
+
+/* Footer */
+#footer_container{
+    display : flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+    font-size: 0.8rem;
+    color: white;
+    background-color: var(--orange); 
+    padding : 1rem;
+    margin : 1rem;
+    margin-top: 0rem;
+}
+
+#footer_container > a{
+    max-width: 10%;
+    margin: 0px;
+}
+
+#footer_container > p{
+    padding: 3px;
+}
+
+
+/* Section "footer" __ pour mobile */
+@media (max-width: 900px){
+    #footer_container{
+        display : flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 0.8rem;
+        color: white;
+        padding : 5px;
+    }
+
+}
+/*Section FAQ*/
+.mainFaq-container{
+    margin: 3rem;
+    margin-top: 0%;
+    padding-top: 6rem;
+} 
+
+.mainFaq-container-article{
+    margin:1rem;
+}
+
+.mainFaq_title{
+    color : var(--orange);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.mainFaq_description{
+    text-align: justify;
+    margin-bottom: 2rem;
+    line-height: 1.4rem;
+}
+
+.list{
+    background-color: rgb(249, 249, 249);
+}
+
+.mainFaq-container-list_title{
+    color:var(--orange);
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin: 1rem;
+    padding-top: 1rem;
+}
+.mainFaq-container-list{
+    font-size: 0.8rem;
+    margin: 1rem;
+    margin-left: 1.5rem;
+    line-height: 1.5rem;
+}
+
+/* Gestion 404 */
+.errorPage{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.errorPage_title{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.errorPage_img{
+    margin: auto;
+    max-width: 30%;
+}
+
+@media (max-width: 900px){
+    .errorPage_img{
+        margin: auto;
+        max-width: 50%;
+    }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <%- include('partials/header') %>
+    <title>Comment acheter du Bitcoin _ CryptoBallZ </title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-container">
+                <a href="/"><img class="header-logo" src="../img/CryptoballZ_logo.png" alt="CryptoBallZ logo"></a>
+                <!-- the menu -->
+                <%- include('partials/menu') %> 
+            </div>    
+        </header>
+        <main class="mainHome">
+            <article class="mainHome-header_article">
+               <div class="mainHome-header_article_img">                    
+               </div> 
+               <div class="mainHome-header_article_container">     
+                    <h1 class="mainHome-header_article_container-title">Comment fait-on pour acheter du Bitcoin ?</h1>
+                    <div class="mainHome-header_article_container--buybitcoin">
+                        <img class="mainHome-header_article_img-picture--buybitcoin" src="../img/le bitcoin/cryptoballz_comment-acheter-du-bitcoin.webp" alt="Comment acheter du Bitcoin ?">
+                        <p class="mainHome-header_article-presentation mainHome-header_article-presentation--buybitcoin">On parle beaucoup du Bitcoin et des autres cryptomonnaies comme l’Ether. Cependant beaucoup de personnes qui souhaiteraient en détenir ne savent pas concrètement par où commencer afin d’en acheter. Les articles ci-dessous vous présentent plusieurs plateformes ou exchanges qui vous permettent d’acheter facilement vos premiers satoshis ou Bitcoins.</p>
+                    </div>
+                </div>
+            </article> 
+
+            <section class="mainHome-publication">
+                <div id="buyBitcoinMiniature"></div><!-- publication des miniature sur buy Bitcoin -->
+            </section> 
+        </main>
+    </div>
+    </body>
+
+    <footer>
+        <%- include ('partials/footer') %>
+        <script src="../js/buyBitcoin.js"></script>
+    </footer>
+</html>

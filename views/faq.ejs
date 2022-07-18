@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <%- include('partials/header') %>
+    <title>FAQ _ CryptoBallZ </title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-container">
+                <a href="/"><img class="header-logo" src="../img/CryptoballZ_logo.png" alt="CryptoBallZ logo"></a>
+                <!-- the menu -->
+                <%- include('partials/menu') %> 
+            </div>    
+        </header>
+    
+        <main class="mainFaq">
+            
+            <div class="mainFaq-container">
+                <h1 class="mainHome-header_article_container-title">FAQ</h1>
+                    <div class="list">
+                    <h3 class="mainFaq-container-list_title">Sommaire</h3>
+                    <ul class="mainFaq-container-list">
+                    <!-- Affichage du sommaire --> 
+                        <% for (const listId of locals.tableFaq){   %>
+                            <li><a href="#<%= listId.id %>"><%= listId.titre %></a></li>
+                        <% } %>                        
+                    </ul>
+                    </div>
+                 
+                <!-- Affichage des faq -->    
+                <% for(const listFaq of locals.tableFaq){ %>
+                    <article class="mainFaq-container-article">
+                        <h2 class="mainFaq_title" id="<%= listFaq.id %>"><%= listFaq.titre %></h2>
+                        <p class="mainFaq_description"><%= listFaq.contenu %></p>
+                    </article>
+                <% } %>
+                
+            </div>        
+        </main><!--mainHome-->
+    </div>
+</body>
+<footer>
+    <%- include ('partials/footer') %>
+</footer>
+</html>
+

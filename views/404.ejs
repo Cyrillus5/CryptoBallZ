@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <%- include('partials/header') %>
+<title>404 page non trouvée _ CryptoBallZ </title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-container">
+                <a href="/"><img class="header-logo" src="../img/CryptoballZ_logo.png" alt="CryptoBallZ logo"></a>
+                <!-- the menu -->
+                <%- include('partials/menu') %> 
+            </div>    
+        </header>
+    
+        <div class="errorPage">
+            <img class="errorPage_img" src="/img/accueil/cryptoballz_accueil_bitcoin.jpg" alt="Image d'accueil de CryptoBallZ">
+            <p class="errorPage_title">404</p>
+            <p class="errorPage_message">Page non trouvée, je pense qu'il n'y a pas de boules de cristal par ici !</p>
+        </div>  
+    </div>
+</body>
+<footer>
+    <%- include ('partials/footer') %>
+</footer>
+</html>

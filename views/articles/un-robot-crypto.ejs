@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <%- include('../partials/header') %>
+    <title>Un robot crypto ! _ CryptoBallZ </title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-container">
+                <a href="/"><img class="header-logo" src="../img/CryptoballZ_logo.png" alt="CryptoBallZ logo"></a>
+                <!-- the menu -->
+                <%- include('../partials/menu') %>             
+                
+            </div>    
+        </header>
+        <main class="mainHome">
+            <article class="mainHome-header_article">
+               <div class="mainHome-header_article_img">
+                    <img class="mainHome-header_article_img-picture" src="../img/articles/Un robot crypto !\CryptoballZ _ kryll.io_bandeau_haut.jpg" alt="Un robot crypto">
+               </div> 
+               <div class="mainHome-header_article_container">     
+                    <h1 class="mainHome-header_article_container-title">Un robot crypto !</h1>
+                    <p class="mainHome-header_article-presentation">Pensez vous qu’un jour, un robot pourra gérer votre portefeuille crypto, en vendant quand il le faut et en achetant au bon moment ? En fait, ce service existe déjà ! La startup française Cryptense a créé la plateforme plateforme Kryll.io. Cette plateforme permet notamment de choisir et d’utiliser une stratégie automatisée de trading (ce que l’on appelle un « bot ») mais également si vous le désirez de créer votre propre stratégie à l’aide d’un éditeur de stratégies en glisser-déposer. Kryll.io est la première plateforme intuitive et visuelle permettant de créer des stratégies de trading automatisées en quelques minutes.</p>
+                </div>
+            </article> 
+
+            <article class="mainHome-publication">
+                <h2 class="mainHome-publication_title">C’est quoi au juste la plateforme Kryll.io ?</h2>
+                <p class="mainHome-publication_contain mainHome-publication_contain--first">Kryll.io permet de créer très facilement, sans aucune connaissance informatique, des stratégies d’achat et de vente sur telle ou telle cryptomonnaie. Ces stratégies peuvent ensuite tester gratuitement sur un historique de plusieurs années et sur plus de 1000 paires de cryptomonnaies différentes. Avec la plateforme Kryll.io, vous pouvez ainsi diversifier votre portefeuille et lancer des stratégies sur des cryptomonnaies comme bitcoin (BTC), Ether (ETC), Cardano (ADA), Solana (SOL) et bien d’autres encore, limitant vos risques de perte mais augmentant vos chances de gains.</p>
+
+                <div class="mainHome-publication_contain-media">
+                <iframe  src="https://www.youtube.com/embed/BfkYZwy09_U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <p class="mainHome-publication_contain">A titre d’exemple, prenons deux personnes qui possèdent 1 BTC depuis 1 an. La performance de la stratégie sera comparée entre la personne qui aura acheté 1 BTC et qui depuis l’aurait conservé et l’autre personne qui aurait utilisé la stratégie et qui, si la stratégie fonctionne bien, devrait avoir dans son portefeuille plus de BTC. Les stratégies jouent sur la volatilité des crypto (variation des prix au fil du temps) pour acheter quand c’est en bas et vendre quand c’est au plus haut. Une fois la stratégie mise au point, toute personne ayant des crypto peut l’utiliser.</p>
+                    
+            </article>
+                
+            <article class="mainHome-publication">
+                <h2 class="mainHome-publication_title">Comment utiliser la plateforme Kryll.io ?</h2>
+                <h3 class="mainHome-publication_subtitle">1. Inscription sur Kryll.io</h3>
+                <p class="mainHome-publication_contain mainHome-publication_contain--first">En premier lieu, inscrivez-vous sur la plateforme. Pour cela, cliquez sur la bannière ci-dessous, vous bénéficierez alors de 30% de réduction sur vos frais pendant deux semaines !</p>
+
+                <div class="mainHome-publication_contain-pictureLink">
+                <a target="_blank" href="https://kryll.io?ref=cryptoballz"><img alt="Kryll.io" src="https://kryll.io/external/square2.png" /></a>
+                </div>
+
+                <p class="mainHome-publication_contain">Dans un second temps, pour utiliser la plateforme Kryll.io vous devez disposer d’un portefeuille crypto sur l’un des exchanges suivants :</p>
+
+                <ul>
+                    <li class="mainHome-publication_contain-list"><strong><a href="https://accounts.binance.com/fr/register?ref=WD72EP9B" target="_blank">Binance</a></strong> (voir notre article Acheter du Bitcoin sur Binance)</li>
+                    <li class="mainHome-publication_contain-list"><strong><a href="https://ftx.com/#a=3757226" target="_blank">FTX</a></strong> (voir notre article Acheter du Bitcoin sur FTX)</li>
+                    <li class="mainHome-publication_contain-list">Bittrex
+                        </li>
+                    <li class="mainHome-publication_contain-list">Liquid
+                        </li>
+                    <li class="mainHome-publication_contain-list">Kraken
+                        </li>
+                    <li class="mainHome-publication_contain-list">Kucoin
+                        </li>
+                    <li class="mainHome-publication_contain-list">HitBTC</li>                    
+                </ul>
+                    
+                <p class="mainHome-publication_contain">Maintenant, vous devez lier votre compte crypto (binance, FTX, …) à votre compte Kryll. Pour cela, vous devez créer une clé API.</p>
+
+                <h3 class="mainHome-publication_subtitle">2. Comment créer une clé API ?</h3>
+                <p class="mainHome-publication_contain">Voici la méthode afin de créer une clé API sur <strong><a href="https://accounts.binance.com/fr/register?ref=WD72EP9B" target="_blank">Binance</a></strong> :</p>
+                <ol>
+                    <li class="mainHome-publication_contain-list">Rendez vous sur le site web de Binance,dans le menu en haut à droite (le rond avec les premières lettres de votre mail) et cliquez sur « Gestion API ».</li>
+                    <li class="mainHome-publication_contain-list">Donnez un nom à votre nouvelle clé API et cliquez sur « Créer ».</li> 
+                    <li class="mainHome-publication_contain-list">Un mail de confirmation vous sera envoyé, cliquez sur le lien présent dans cet email pour activer votre clé API. Votre clé API Binance est dorénavant active. Pour les réglages, dans « Restrictions API », laissez cochées les cases « Lecture seule » et « Activer le trading ». Laissez également la réstriction d’IP sur « Sans restriction ». Ne cochez pas la case « Activer les retraits » pour raison de sécurité.</li> 
+                    <li class="mainHome-publication_contain-list">Retournez sur votre compte Kryll dans la section « Mon Compte ». Dans la rubrique de droite « Connectez-vous à vos échanges » sélectionnez « Binance » et indiquez votre « Clé API » et « Clé secrète » que vous venez de créer. Puis cliquez sur « Ok ».</li> 
+                    <li class="mainHome-publication_contain-list">Votre clé API Binance est maintenant liée à votre compte Kryll !</li> 
+                </ol>
+                <p class="mainHome-publication_contain">Voici la méthode à suivre afin de créer une clé API sur <strong><a href="https://ftx.com/#a=3757226" target="_blank">FTX</a></strong> :</p>
+                <ol>
+                    <li class="mainHome-publication_contain-list">Pour FTX, rendez vous sur le site web de FTX puis connectez vous à votre compte.</li>
+                    <li class="mainHome-publication_contain-list">En haut à droite du site, cliquez sur votre adresse email, puis dans le menu déroulant, choisissez « paramètres ».</li>
+                    <li class="mainHome-publication_contain-list">Dans la rubrique « Clés API » cliquez sur « Créer une clé API ». Une fenêtre avec votre clé API ainsi que la secret API s’ouvrira.</li>
+                    <li class="mainHome-publication_contain-list">Retournez maintenant sur votre compte Kryll. Dans l’onglet « Mon Compte », allez à la rubrique de droite « Connectez-vous à vos échanges », sélectionnez « FTX » et indiquez votre « Clé API » et « Clé secrète » que vous venez de créer sur FTX. Puis cliquez sur « Ok ».</li>
+                    <li class="mainHome-publication_contain-list">Votre clé API FTX est dorénavant liée à votre compte Kryll!</li>
+                </ol>
+                <h3 class="mainHome-publication_subtitle">3. La marketplace de Kryll.io</h3>
+                <p class="mainHome-publication_contain mainHome-publication_contain--first">Toutes les stratégies de trading de la plateforme Kryll.io fonctionne 24 heures sur 24 et 7 jours sur 7. On n’a donc plus besoin de stresser en restant en permanence devant son écran pour surveiller les prix de nos crypto. La stratégie est automatique, elle exécute toute seule les ordres de vente et d’achat. Pour faire fonctionner votre bot vous avez besoin d’acheter du kryll, c’est le fuel de la stratégie. Pour cela, nous vous renvoyons sur le blog de la plateforme kryll.io : <strong><a href="https://blog.kryll.io/fr/comment-acheter-jetons-krl/amp/">ICI</a></strong>.</p>
+                <p class="mainHome-publication_contain">Une fois des kryll dans votre portefeuille de plateforme, vous pouvez désormais parcourir la marketplace.</p>
+                <img class="mainHome-publication_contain-landPicture" src="/img/articles\Un robot crypto !\CryptoballZ _ kryll.io 2.jpg" alt="Marketplace de Kryll.io">
+                <p class="mainHome-publication_contain">La marketplace regroupe l’ensemble des stratégies disponibles qui ont été testés et notées par les utilisateurs. Chaque stratégie présente met en avant les paires de cryptomonnaies pour lesquelles elle a été optimisée. Prenons, à titre d’exemple, la stratégie Maya qui fonctionne sur la paire ETH/USDT.</p>
+                <img class="mainHome-publication_contain-landPicture" src="/img/articles\Un robot crypto !\CryptoballZ _ kryll.io 3.jpg" alt="Marketplace de Kryll.io et la stratégie Maya">
+                <p class="mainHome-publication_contain">Cette page nous apporte de nombreuses informations. Avant tout, afin de choisir une bonne stratégie, il faut regarder depuis quand elle a été publiée et combien d’utilisateurs l’emploient. Si cela fait longtemps qu’elle existe et que beaucoup de personnes l’utilisent, c’est déjà un bon signe. Une section « <strong>Backtest</strong> » vous permettra de tester virtuellement la stratégie sur un laps de temps souhaité (un mois, un an, …) et de voir ce qu’elle vous aurait rapporter si vous l’aviez utilisée. Si vous avez des Krylls dans votre portefeuille, de l’Ether ou de l’USDT, vous pouvez maintenant lancer la stratégie en cliquant sur "<strong>Lancer</strong>" .</p>
+                <img class="mainHome-publication_contain-landPicture" src="/img/articles\Un robot crypto !\CryptoballZ _ kryll.io 4.jpg" alt="Kryll.io lancer une stratégie etape 1">
+                <p class="mainHome-publication_contain">Une fenêtre popup apparait sur laquelle vous pouvez choisir :</p>
+                <ol>
+                    <li class="mainHome-publication_contain-list">à partir de quelle plateforme d’échange cryptos vous souhaitez que l’ether ou l’USDT viennent,</li>
+                    <li class="mainHome-publication_contain-list">le montant que vous voulez trader,</li>
+                    <li class="mainHome-publication_contain-list">combien de Kryll (KRL) vous voulez utiliser pour faire fonctionner cette stratégie (on vous indique combien de KRL la stratégie va consommer par jour),</li>
+                    <li class="mainHome-publication_contain-list">si vous souhaitez la lancer virtuellement (pour de faux) ou pour de vrai (Livetrading).</li>                    
+                </ol>
+                <p class="mainHome-publication_contain">Une fois que vous avez bien rempli tous les informations vous pour pouvez la lancer et l’automatisation du trading commencera.</p>
+                <p class="mainHome-publication_contain mainHome-publication_contain--conclusion">En conclusion, après avoir tester la plateforme Kryll.io, on peut dire qu’il s’agit d’un outil très utile et facile d’utilisation qui peut apporter une certaine rentabilité. Même en période de bearmarket, Kryll.io est capable de vous apporter des bénéfices. Il faut toutefois bien sélectionner sa stratégie et bien lire le descriptif associé. Nous vous conseillons de télécharger l’application Kryll.io afin de vous apporter une meilleure expérience et un meilleur suivi de vos stratégies.Une fois que vous avez bien rempli tous les informations vous pour pouvez la lancer et l’automatisation du trading commencera.</p>              
+                
+            </article>            
+
+            <div class="mainHome-publication">    
+                <div id="buyBitcoinMiniature"></div><!-- publication des miniature sur buy Bitcoin -->                
+            </div> 
+            
+            
+            
+        </main>
+    </div>
+    </body>
+    <footer>
+        <%- include ('../partials/footer') %>
+        <script src="../js/buyBitcoin.js"></script>
+    </footer>
+</html>

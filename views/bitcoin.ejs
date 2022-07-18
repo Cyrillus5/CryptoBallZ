@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <%- include('partials/header') %>
+    <title>Le Bitcoin _ CryptoBallZ </title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-container">
+                <a href="/"><img class="header-logo" src="../img/CryptoballZ_logo.png" alt="CryptoBallZ logo"></a>
+                <!-- the menu -->
+                <%- include('partials/menu') %>             
+                
+            </div>    
+        </header>
+        <main class="mainHome">
+            <article class="mainHome-header_article">
+               <div class="mainHome-header_article_img">
+                    <img class="mainHome-header_article_img-picture" src="../img/le bitcoin/C'est-quoi-le-bitcoin.jpg" alt="Qu'est ce que le Bitcoin ?">
+               </div> 
+               <div class="mainHome-header_article_container">     
+                    <h1 class="mainHome-header_article_container-title">Le Bitcoin, une monnaie cryptographique !</h1>
+                    <p class="mainHome-header_article-presentation">Et si vous en appreniez un peu plus sur le Bitcoin avant d’y investir vos premiers euros ! Cette rubrique est consacrée à l’histoire du Bitcoin, de sa création à son utilité dans le monde économique mais également son impact dans le monde social d’aujourd’hui.</p>
+                </div>
+            </article> 
+
+            <article class="mainHome-publication">
+                <h2 class="mainHome-publication_title">Dis moi Sangoku, c’est quoi le Bitcoin au juste ?</h2>
+                <p class="mainHome-publication_contain">Le Bitcoin peut se définir de différentes manières selon que l’on se présente comme développeur, financier, utilisateur … ou membre du FMI ! Si l’on relève l’une des définitions du Bitcoin que fait <strong><a href="https://en.wikipedia.org/wiki/Michael_J._Saylor" target="_blank">Michael Saylor</a></strong>, dirigeant de l’entreprise américaine <strong><a href="https://www.microstrategy.com/fr" target="_blank">MicroStrategy</a></strong>, société qui fournit des services de veille économique, de logiciels mobiles et de cloud, cette cryptomonnaie est : Le Bitcoin est une technologie qui donne à l’humanité la possibilité de propriété, c’est à dire de posséder sa liberté. </p>
+                <div class="mainHome-publication_contain-img--microstrategy">
+                    <div class="copy-twitter-tweet">
+                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/Bitcoin?src=hash&amp;ref_src=twsrc%5Etfw">#Bitcoin</a> is technology to gift humanity the right to property. <a href="https://twitter.com/hashtag/NewProfilePic?src=hash&amp;ref_src=twsrc%5Etfw">#NewProfilePic</a> <a href="https://t.co/UvbcrPIVRo">pic.twitter.com/UvbcrPIVRo</a></p>&mdash; Michael Saylor⚡️ (@saylor) <a href="https://twitter.com/saylor/status/1427230790333644811?ref_src=twsrc%5Etfw">August 16, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>                    
+                    </div>
+                </div>
+                <p class="mainHome-publication_contain">Mais revenons aux fondamentaux ! Le Bitcoin est composé de deux mots, « bit » qui désigne l’unité d’information binaire et « coin » qui signifie « pièce de monnaie ». Généralement, on écrit Bitcoin avec une majuscule lorsque l’on décrit le concept du Bitcoin ou la <strong><a href="https://fr.wikipedia.org/wiki/Blockchain" target="_blank">Blockchain</a></strong> Bitcoin. On écrit alors avec une minuscule lorsque l’on parle du bitcoin comme unité de compte, par exemple : « Je t’ai transféré 5 bitcoins. » Bitcoin est une monnaie numérique, une cryptomonnaie dont le symbole est le BTC qui  fut présentée pour la première fois en novembre 2008 par une personne, ou un groupe de personnes anonymes, sous le pseudonyme de <strong><a href="https://fr.wikipedia.org/wiki/Satoshi_Nakamoto" target="_blank" >Satoshi Nakamoto …</a></strong></p>
+                <p class="moreInfo">Pour en savoir plus sur le Bitcoin …</p>
+            </article> 
+            
+            <article class="mainHome-publication">
+                <h2 class="mainHome-publication_title">Comment peut-on acheter facilement du bitcoin ?</h2>
+                <p class="mainHome-publication_contain">Maintenant que vous en savez un peu plus sur le Bitcoin, vous souhaitez en acheter mais vous ne savez pas comment vous y prendre. Nous vous présentons ci-dessous plusieurs façon d’obtenir un wallet et d’acheter du Bitcoin ou des Satoshis (fraction d’un bitcoin jusqu’à la huitième décimale). Ne vous inquiétez pas, c’est beaucoup plus simple que de rechercher les sept boules de cristal.</p>
+                <div id="buyBitcoinMiniature"></div><!-- publication des miniature sur buy Bitcoin -->                
+            </article> 
+            
+            <article class="mainHome-publication">
+                <h2 class="mainHome-publication_title">C’est quoi le minage de Bitcoin ?</h2>
+                <p class="mainHome-publication_contain">Il existe une autre façon d’obtenir du Bitcoin, il est possible de le miner. « Bon, je vais chercher ma pioche et j’arrive ! Non Sangoku, laisse ta pioche ou ton bâton magique ! Il nous faudrait plutôt des ordinateurs ». Oui, afin de miner du Bitcoin, de l’Ether ou une autre cryptomonnaie, il faut de la puissance informatique. Cela signifie, de l’achat du matériel, du coup nécessitant son installation, son optimisation, sa mise à jour logicielle, son entretien, son coût énergétique et ses désagréments environnementaux tels que la chaleur et le bruit. Mais c’est quoi concrètement le minage de Bitcoin ?</p>
+                <p class="moreInfo"><a href="/bitcoin/c'est-quoi-le-minage-de-bitcoin">Pour en savoir plus sur le minage de cryptomonnaie …</a></p>
+            </article> 
+            
+        </main>
+    </div>
+    </body>
+    <footer>
+        <%- include ('partials/footer') %>
+        <script src="../js/buyBitcoin.js"></script>
+    </footer>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <%- include('partials/header') %>
+    <title>Actualité des cryptomonnaies _ CryptoBallZ </title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-container">
+                <a href="/"><img class="header-logo" src="../img/CryptoballZ_logo.png" alt="CryptoBallZ logo"></a>
+                <!-- the menu -->
+                <%- include('partials/menu') %> 
+            </div>    
+        </header>
+        <main class="mainHome">
+            <div class="mainHome-header">
+               <div class="mainHome-header_img">
+                    <img class="mainHome-header_img-picture" src="../img/actualité/cryptomonnaie-actu.jpg" alt="Toutes les actualités sur les cryptomonnaies">
+               </div> 
+               <article class="mainHome-header_container">     
+                    <h1 class="mainHome-header_container-title">Actualité sur les cryptos !</h1>
+                    <p class="mainHome-header_container-presentation">Vous trouverez dans cette section l’ensemble de l’actualité sur les cryptomonnaies (Bitcoin, Ether, Solana, …), les Blockchains, les NFT et tout ce qui touche au monde de la cryptosphère. Vous y lirez aussi bien des news que des tutoriel vous permettant de progresser dans votre cheminement à la recherche des sept boules de cristal … Heu, non, … à la recherche d’une meilleure compréhension des cryptos !</p>
+               </article>
+            </div> 
+            <section class="mainHome-body">
+                <h2 class="mainHome-body-title">Pour tout savoir sur l’univers du Bitcoin, de l’Ether, des cryptomonnaies, des NFT et de la finance décentralisée, lisez nos derniers articles d’actualité !</h2>
+                    <div id="actuInfoMiniature" class="actuInfoMiniature">
+                        <!-- publication des news-->
+                        <% for (const getListNews of getNewsList){ %>
+                            <div class="actuInfoMiniature-news">
+                                <a href="<%= getListNews.link %>" title="<%= getListNews.alt %>"><img class="actuInfoMiniature-news_img" alt="<%= getListNews.alt %>" src="<%= getListNews.image %>"></a>
+                                    <div class="actuInfoMiniature-news_container">
+                                        <a href="<%= getListNews.link %>" title="<%= getListNews.alt %>"><h3 class="actuInfoMiniature-news_container-title"><%= getListNews.title %></h3></a>
+                                        <a href="<%= getListNews.link %>" title="<%= getListNews.alt %>"><p class="actuInfoMiniature-news_container-text"><%= getListNews.synopsis %></p></a>
+                                    </div>
+                            </div>
+                        <% } %>
+                    </div>                
+            </section>   
+        </main>
+    </div>
+</body>
+<footer>
+        <%- include ('partials/footer') %>
+</footer>
+</html>

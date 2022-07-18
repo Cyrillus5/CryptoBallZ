@@ -1,0 +1,62 @@
+[
+    {
+    "id" : "hold",
+    "titre" : "Que signifie « HOLD » !",
+    "contenu" : "Si vous fréquentez le monde des cryptodevises, vous constaterez que sur les comptes Telegram, Discord, Twitter qui en parlent, on aborde souvent le terme HOLD ! Ce mot signifie que l’on achète à un moment donné une crypto que l’on souhaite garder sur le long terme (de plusieurs mois à plusieurs années) car on pense qu’elle prendra de la valeur dans le futur. Il faut alors avoir les nerfs solides lorsqu’un crack se produit (ce qui arrive souvent avec les cryptomonnaies !)."
+    },             
+    {
+    "id" : "trading",   
+    "titre" : "C’est quoi le trading de cryptomonnaies ?",
+    "contenu" : "L’autre technique que l’on rencontre souvent est le trading de cryptomonnaies, soit le Day Trading (Réaliser un grand nombre d’opérations de petite taille dans une même journée, et clôturer toutes les positions avant la fin de la séance) ou soit le Scalping (réaliser des ordres très courts, dans le sens de la tendance, en prenant des gains nombreux mais extrêmement faibles). Mais ces méthodes nécessitent une connaissance technique pointue si l’on ne veut pas jouer à la roulette."
+    },
+    {
+    "id" : "staking",
+    "titre" : "C’est quoi le staking ?",
+    "contenu" : "Binance Research (branche de Binance proposant des analyses poussées aux institutionnels), définie le staking comme : « Le staking est le processus de détention de fonds dans un portefeuille de cryptomonnaie pour soutenir les opérations d’un réseau de blockchain. Il s’agit de verrouiller des cryptomonnaies pour recevoir une récompense ». Nous vous invitons à consulter notre article concernant le staking sur Binance afin de mieux comprendre cette technique."
+    },
+    { 
+    "id" : "PoS",
+    "titre" : "Qu’est-ce que le Proof of Stake (PoS) ou preuve d’enjeu ?",
+    "contenu" : "Le Proof of Stake (PoS) ou preuve d’enjeu, ou preuve de participation, (Wikipedia)  est le mécanisme  de consensus d’une blockchain qui garantit le bon fonctionnement de cette dernière. Les cryptomonnaies bloquées sont utilisées pour valider les transactions, faire fonctionner les nœuds et maintenir la bonne santé de la blockchain."
+    },
+    {
+    "id" : "minage",
+    "titre" : "Qu’est-ce que le minage de cryptomonnaie ?",
+    "contenu" : "Le minage de cryptomonnaie consiste a sécurisé une transaction effectuée en cryptomonnaie en cryptant cette dernière et en l’enregistrant dans une blockchain. Les personnes qui s’occupent de ce travail de minage s’appellent des mineurs. Ils utilisent la puissance de leur matériel informatique afin de sécuriser les blocs de données de la blockchain et en retour ils obtiennent une récompense en cryptomonnaie. Pour en savoir plus « C’est quoi le minage de Bitcoin ? »."
+    },
+    { 
+    "id" : "fiat", 
+    "titre" : "C’est quoi une monnaie fiat ?",
+    "contenu" : "Dans le monde des cryptos, on oppose souvent les termes de cryptomonnaie et de monnaie fiat. Lorsque l’on parle de monnaie fiat, on parle en faite de l’ensemble des monnaies qu’il existe dans le monde dont la valeur est déterminée par un gouvernement donnée ou un ensemble de gouvernements comme la zone euro qui décident de son cours légal. A titre d’exemple, nous avons le Dollar pour les Etats-Unis ou l’Euro pour l’Europe. Il ne faut pas confondre les monnaies fiat et les stablecoins."
+    },
+    {
+    "id" : "stablecoin",
+    "titre" : "Qu’est ce qu’un stablecoin ?",
+    "contenu" : "Un stable coin ou stablecoin est une cryptomonnaie dont le cours a été adossé à une autre monnaie fiat. Les stablecoins ont été créé afin d’éviter la volatilité que l’on peut avoir dans le marché des cryptos, c’est une cryptomonnaie stable. En effet, le cours d’une cryptomonnaie peut fortement varié d’une journée à l’autre de 10% voir parfois de 50%. Avec un stablecoin, en cas de volatilité du marché, votre portefeuille reste stable. Il existe plusieurs stablecoins disponibles par exemple : le tether (USDT) adossé au dollar, l’USD Coin (USDC) adossé au dollar et le Binance USD (BUSD) aussi adossé au dollar américain. Cela veut dire par exemple pour le Binance USD que 1 BUSD sera toujours égale à 1 dollar américain dont avec une parité de 1:1. Si une entreprise émet des stablecoins, elle doit derrière prouver qu’elle détient à parité égale la même quantité de dollars (si le stablecoin en question est adossé au dollar) bloqué sur un compte bancaire. A titre d’exemple, si l’entreprise met en circulation 10 millions de USDT adossés au dollar, elle doit avoir 10 millions de dollars dans un compte bancaire bloqué."
+    },
+    {
+    "id" : "roadmap", 
+    "titre" : "Qu’est-ce qu’une Roadmap ?",
+    "contenu" : "Dans la cryptosphère, la roadmap est un document qui présente pour une crypto ou une blockchain donnée toutes les dates et les étapes clés du projet nécessaire à son développement dans les mois et les années qui viennent par ordre chronologique. En français, la roadmap signifie la « feuille de route ». Ce document est un élément clef qui permet de juger de la pertinence du projet en question. A titre d’exemple, vous pouvez consulter la roadmap de cardano."
+    },
+    {
+    "id" : "bullRun", 
+    "titre" : "Qu’est-ce qu’un bull run ?",
+    "contenu" : "Un Bull Run représente une période durant laquelle le Bitcoin, l’ether et les autres cryptomonnaies enregistrent la plus forte croissance de leur cours. Le contraire de bull run est le bear market lorsque le cours d’une ou de cryptomonnaies baisse significativement sur une période plus ou moins longue. Consultez cet article si vous souhaitez en apprendre plus sur ces termes."
+    },
+    {
+    "id" : "buyTheDip",
+    "titre" : "Que signifie « buy the dip » ?",
+    "contenu" : "« Buy the dip » est un terme que l’on retrouve dans le monde des cryptomonnaies mais également dans le marché boursier traditionnel. Ce terme signifie : acheter une crypto lorsque que le cours de cette dernière à fortement baissé. Il s’agit d’investir lorsque le cour est au plus bas avant que le cours remonte. La difficulté de cette technique est de savoir si on atteint un plus bas, un bottom, ou pas, et si le cours n’est pas parti dans une tendance baissière."
+    },
+    {
+    "id" : "fomo",
+    "titre" : "Que signifie « FOMO » ?",
+    "contenu" : "Si Vous parcourez régulièrement les forums et les articles parlant des cryptomonnaies, des NFT ou de la cryptosphère en générale, vous avez surement croisé le terme : FOMO. FOMO désigne en anglais Fear Of Missing. Littéralement en français, cela signifie « la peur de rater quelque chose ». Voyant que le cours d’une cryptomonnaie monte fortement, beaucoup de personne investissent dessus afin de ne pas raté cette opportunité. Ils suivent alors le FOMO ! C’est une pratique dangereuse, que nous déconseillons, car à tout moment le cours peut se retourner et subir une forte correction." 
+    },
+    {
+    "id" : "DYOR",
+    "titre" : "Que signifie « DYOR » ?",
+    "contenu" : "Non, ce n'est pas un parfum ! DYOR est un acronyme qui vient de l’anglais Do Your Own Research ! Littéralement en français, cela signifie « faites votre propre recherche ! » avant d'investir dans ce qui pourrait être une arnaque. Ce terme n’est pas propre aux cryptos mais dans la cryptosphère, il a toute son importance." 
+        }
+]

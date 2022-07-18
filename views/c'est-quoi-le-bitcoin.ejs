@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <%- include('partials/header') %>
+    <title>C'est quoi le Bitcoin ? _ CryptoBallZ </title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-container">
+                <a href="/"><img class="header-logo" src="../img/CryptoballZ_logo.png" alt="CryptoBallZ logo"></a>
+                <!-- the menu -->
+                <%- include('partials/menu') %> 
+            </div>    
+        </header>
+        <main class="mainHome">
+            <article class="mainHome-header_article">
+               <div class="mainHome-header_article_img">
+                    <img class="mainHome-header_article_img-picture" src="../img/le bitcoin/qu-est-ce-que-le-bitcoin.webp" alt="Qu'est ce que le bitcoin ?">
+               </div> 
+               <div class="mainHome-header_article_container">     
+                    <h1 class="mainHome-header_article_container-title">Dis moi, c’est quoi le Bitcoin ?</h1>
+                    <p class="mainHome-header_article-presentation">Ne fais pas cette tête là Sangoku avec ces gros yeux globuleux, on va t’expliquer tranquillement ce qu’est le Bitcoin. Sache tout d’abord, qu’il est aussi précieux que tes boules de cristal 😉 Commençons par le commencement !</p>
+                </div>
+            </article> 
+
+            <article class="mainHome-publication">
+                <h2 class="mainHome-publication_title">Qu’est ce que le Bitcoin ?</h2>
+                <p class="mainHome-publication_contain">Le bitcoin représente à la fois une cryptomonnaie mais également une <strong><a href="https://fr.wikipedia.org/wiki/Blockchain" target="_blank">blockchain</a></strong> qui permet d’effectuer des transactions de façon transparente et sécurisée. Lorsque l’on parle du bitcoin comme unité, par exemple « je lui ai transmis 2 bitcoins », on l’écrit avec un « b » minuscule mais lorsque l’on désigne le système de paiement on écrit Bitcoin avec un « B » majuscule. La notion de bitcoin a été évoqué pour la première fois en novembre 2008, par une personne non identifiée ou un groupe de personnes dont le pseudonyme est <strong><a href="https://fr.wikipedia.org/wiki/Satoshi_Nakamoto">Satoshi Nakamoto</a></strong>. Cependant c’est en 2009 que le <strong><a href="https://bitcoin.org/files/bitcoin-paper/bitcoin_fr.pdf">livre blanc sur le Bitcoin</a></strong>  a été publié. Ce dernier désigne le système Bitcoin comme  » Une version d’un système de paiement purement pair-à-pair permettrait des paiements en ligne directs d’une partie à l’autre sans passer par une institution financière ».</p>
+                <p class="mainHome-publication_contain">Donc pour résumé, le bitcoin est une monnaie virtuelle ou cryptomonnaie qui, contrairement aux monnaies classiques (appelées aussi monnaie fiat) n’est pas imprimé et administré par une autorité bancaire. Le bitcoin est émis sur le protocole blockchain du même nom Bitcoin.</p>                
+                <p class="moreInfo">Pour savoir comment acheter du Bitcoin …</p>
+            </article> 
+        </main>
+    </div>
+    </body>
+    <footer>
+        <%- include ('partials/footer') %>
+    </footer>
+</html>

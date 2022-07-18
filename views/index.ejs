@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <%- include('partials/header') %>
+    <title>CryptoBallZ _ Comprendre l'univers des cryptomonnaies</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-container">
+                <a href="/"><img class="header-logo" src="/img/CryptoballZ_logo.png" alt="CryptoBallZ logo"></a>
+                <!-- the menu -->
+                <%- include('partials/menu') %> 
+            </div>    
+        </header>
+        <main class="mainHome">
+
+            <article class="mainHome-header">
+               <div class="mainHome-header_img">
+                    <img class="mainHome-header_img-picture" src="../img/accueil/cryptoballz_accueil_bitcoin.jpg" alt="Image d'accueil de CryptoBallZ">
+               </div> 
+               <div class="mainHome-header_container">     
+                    <h1 class="mainHome-header_container-title">L'Univers des Cryptomonnaies</h1>
+                    <p class="mainHome-header_container-presentation">Bienvenue sur CryptoballZ, le <strong>site pédagogique sur le bitcoin</strong>, l'ethereum et les cryptomonnaies. C'est quoi une cryptomonnaie au juste ? Qu'est ce que le Bitcoin ? Quelle est la meilleure plateforme pour acheter facilement du Bitcoin ou de l'Ether ? Comment utiliser Binance ou Pancakeswap ? vous avez dit NFT ? Rien de plus simple. Vous n'avez pas besoin d'être Sangoku pour réussir ! CryptoballZ guide les débutants comme les confirmés à travers l'univers des cryptomonnaies, de la finance décentralisée (Défi) et des NFT (non-fungible token).</p>
+                </div>
+            </article>
+
+            <article class="mainHome-body">
+                <h2 class="mainHome-body-title">Pour tout savoir sur l’univers du Bitcoin, de l’Ether, des cryptomonnaies, des NFT et de la finance décentralisée, lisez nos derniers articles d’actualité !</h2>                
+                <div id="actuInfoMiniatureHome">
+                <!--  publication des news -->
+                <% for (const getListNews of getNewsList){ %>
+                    <div class="actuInfoMiniature-news">
+                            <a href="<%= getListNews.link %>" title="<%= getListNews.alt %>"><img class="actuInfoMiniature-news_img" alt="<%= getListNews.alt %>" src="<%= getListNews.image %>"></a>
+                            <div class="actuInfoMiniature-news_container">
+                                <a href="<%= getListNews.link %>" title="<%= getListNews.alt %>"><h3 class="actuInfoMiniature-news_container-title"><%= getListNews.title %></h3></a>
+                                <a href="<%= getListNews.link %>" title="<%= getListNews.alt %>"><p class="actuInfoMiniature-news_container-text"><%= getListNews.synopsis %></p></a>
+                            </div>
+                    </div>
+                <% } %>
+                </div>
+                <a class="newsLink" href="/actualite" title="Actualités sur les cryptos "><p>TOUTES LES ACTUS CRYPTOS</p></a>
+            </article>
+
+            <article class="mainHome-buyBitcoin">
+                <h2 class="mainHome-body-title">Apprenez, comment acheter facilement du bitcoin !</h2>
+                <div id="buyBitcoinMiniature"></div><!-- publication des miniature sur buy Bitcoin -->
+                <a class="newsLink" href="/bitcoin" title="Plus d'informations sur le Bitcoin"><p>PLUS D'INFOS SUR LE BITCOIN</p></a>
+            </article>
+
+            <article class="mainHome_influenceurs">
+                <h2 class="mainHome_influenceurs-title mainHome-body-title">Des influenceurs cryptos à suivre !</h2>
+                <div class="mainHome_influenceurs-container">
+
+                    <section class="mainHome_influenceurs-vignette">
+                        <a href="https://www.youtube.com/channel/UCTP_QgORjbiMO4jL8NtGl_A" target="_blank" title="Crypto Futur">
+                        <p class="mainHome_influenceurs-vignette-text">Bienvenue sur ma chaîne YouTube sur laquelle je vous présente une de mes passions qui est la cryptomonnaie !</p>
+                        <img class="mainHome_influenceurs-vignette-img" src="..\img\accueil\crypto_futur.png" alt="crypto_futur">
+                        <h3 class="mainHome_influenceurs-vignette-title">Crypto Futur</h3>
+                        </a>
+                    </section>
+
+                    <section class="mainHome_influenceurs-vignette">
+                        <a href="https://www.youtube.com/c/Hasheur" target="_blank" title="Hasheur">
+                        <p class="mainHome_influenceurs-vignette-text">Je me présente, Hasheur, je vulgarise différentes technologies, techniques et stratégies complexes à travers la Blockchain et les Cryptomonnaies !</p>
+                        <img class="mainHome_influenceurs-vignette-img" src="..\img\accueil/Hasheur.png" alt="Hasheur">
+                        <h3 class="mainHome_influenceurs-vignette-title">Hasheur</h3>
+                        </a>
+                    </section>
+
+                    <section class="mainHome_influenceurs-vignette">
+                        <a href="https://twitter.com/CryptoRusk0f?s=20&t=7bq2H93RJJomGV2OJnVkbA" target="_blank" title="RuskOf">
+                        <p class="mainHome_influenceurs-vignette-text">On peut choisir de se focus sur un marché qui devient de + en + passionnant chaque jour</p>
+                        <img class="mainHome_influenceurs-vignette-img" src="..\img\accueil/RuskOf.png" alt="RuskOf">
+                        <h3 class="mainHome_influenceurs-vignette-title">RuskOf</h3>
+                        </a>
+                    </section>
+
+                </div><!--mainHome_influenceurs-container-->
+            </article> <!--mainHome_influenceurs-->           
+        </main><!--mainHome-->
+    </div>
+</body>
+<footer>
+    <%- include ('partials/footer') %>
+    <script src="../js/buyBitcoin.js"></script>
+</footer>
+</html>
+
