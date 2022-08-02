@@ -1,46 +1,63 @@
 <!--menu de navigation sur desktop-->
-<nav class="nav">                    
-    <ul class="nav-links">
-        <li class="nav-item"><a class="nav-item-link" href="/">Accueil</a></li>
-        <li class="nav-item"><a class="nav-item-link" href="/actualite">Actualité</a></li>
-        <li class="nav-item nav-item--scroll"><a class="nav-item-link" href="/bitcoin">Bitcoin</a>
-            <ul class="nav-links-sub">
-                <li class="nav-item-sub"><a class="nav-item-link-sub" href="/bitcoin/c'est-quoi-le-bitcoin">C'est quoi le Bitcoin ?</a></li>
-                <li class="nav-item-sub"><a class="nav-item-link-sub" href="/bitcoin/c'est-quoi-le-minage-de-bitcoin">C'est quoi le minage de Bitcoin ?</a></li>
-                <li class="nav-item-sub"><a class="nav-item-link-sub" href="/bitcoin/comment-acheter-du-bitcoin">Comment acheter du Bitcoin ?</a></li>
-                <!-- <li class="nav-item-sub"><a class="nav-item-link-sub" href="/html/Bitcoin/comment utiliser le bitcoin.html">Comment utiliser le bitcoin ?</a></li> -->
-            </ul>
-        </li>
-        <!-- <li class="nav-item"><a class="nav-item-link" href="ethereum.html">Ethereum</a></li> -->
-        <!-- <li class="nav-item"><a class="nav-item-link" href="cryptos.html">Cryptos</a></li> -->
-        <!-- <li class="nav-item"><a class="nav-item-link" href="defi.html">DEFI</a></li> -->
-        <!-- <li class="nav-item"><a class="nav-item-link" href="nft.html">NFT</a></li> -->
-        <li class="nav-item"><a class="nav-item-link" href="/faq">FAQ</a></li>
-        <li class="nav-item"><a class="nav-item-link  nav-item-link--bitcoin" href="/bitcoin/comment-acheter-du-bitcoin">Acheter Bitcoin</a></li>
-    </ul>
-</nav>
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    
+  
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="/">
+          Accueil
+        </a>
+  
+        <a class="navbar-item" href="/actualite">
+            Actualité
+        </a>
+  
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Bitcoin
+          </a>
+  
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="/bitcoin/c'est-quoi-le-bitcoin">
+            C'est quoi le Bitcoin ?
+            </a>
+            <a class="navbar-item" href="/bitcoin/c'est-quoi-le-minage-de-bitcoin">
+                C'est quoi le minage de Bitcoin ?
+            </a>
+            <a class="navbar-item" href="/bitcoin/comment-acheter-du-bitcoin">
+                Comment acheter du Bitcoin ?
+            </a>            
+            <!-- <hr class="navbar-divider">
+            <a class="navbar-item">
+              Report an issue
+            </a> -->
+          </div>
+          
+        </div>
+        <a class="navbar-item" href="/faq">
+            FAQ
+        </a>
+      </div>
+  
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-primary has-background-danger" href="/bitcoin/comment-acheter-du-bitcoin">
+              <strong>Acheter du Bitcoin</strong>
+            </a>
+            <!-- <a class="button is-light">
+              Log in
+            </a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
 
-<!--menu de navigation sur mobile-->
-<div class="mobile">
-    <nav class="nav-mobile">                    
-        <ul class="nav-link-mobile">
-            <li class="nav-item-mobile"><a class="nav-item-mobile-link" href="/">Accueil</a></li>
-            <li class="nav-item-mobile"><a class="nav-item-mobile-link" href="/actualite">Actualités</a></li>
-            <li class="nav-item-mobile nav-item-mobile--scroll"><a class="nav-item-mobile-link" href="/bitcoin">Bitcoin</a>
-                <ul class="nav-links-mobile-sub">
-                    <li class="nav-item--mobile-sub"><a class="nav-item-mobile-link-sub" href="/bitcoin/c'est-quoi-le-bitcoin">C'est quoi le Bitcoin ?</a></li>
-                    <li class="nav-item--mobile-sub"><a class="nav-item-mobile-link-sub" href="/bitcoin/c'est-quoi-le-minage-de-bitcoin">C'est quoi le minage de Bitcoin ?</a></li>
-                    <li class="nav-item--mobile-sub"><a class="nav-item-mobile-link-sub" href="/bitcoin/comment-acheter-du-bitcoin">Comment acheter du Bitcoin ?</a></li>
-                    <!-- <li class="nav-item--mobile-sub"><a class="nav-item-mobile-link-sub" href="/html/Bitcoin/comment utiliser le bitcoin.html">Comment utiliser le bitcoin ?</a></li> -->
-                </ul>
-            </li>
-            <!-- <li class="nav-item-mobile"><a class="nav-item-mobile-link" href="ethereum.html">Ethereum</a></li> -->
-            <!-- <li class="nav-item-mobile"><a class="nav-item-mobile-link" href="cryptos.html">Cryptos</a></li> -->
-            <!-- <li class="nav-item-mobile"><a class="nav-item-mobile-link" href="defi.html">DEFI</a></li> -->
-            <!-- <li class="nav-item-mobile"><a class="nav-item-mobile-link" href="nft.html">NFT</a></li> -->
-            <li class="nav-item-mobile"><a class="nav-item-mobile-link" href="/faq">FAQ</a></li>
-            <li class="nav-item-mobile"><a class="nav-item-mobile-link  nav-item-link-mobile--bitcoin" href="/bitcoin/comment-acheter-du-bitcoin">Acheter Bitcoin</a></li>
-        </ul>
-    </nav>
-    <img class="header-img-scroll" src="/img/Ressources/menu_deroulant.png" alt="scroll">
-</div>

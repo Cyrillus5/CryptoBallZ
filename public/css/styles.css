@@ -10,104 +10,34 @@ body {
      position : relative;
 }
 
+a{
+    color: var(--gristexte);
+}
+
 .container{
     margin:0.3rem;
     margin-top : 0px;        
 }
-
 
 header{
     height: 5rem;
     border-bottom: 1px solid lightgray; 
     background-color: white;
     position: fixed;
-    width: 100%;  
-    
+    width: 100%;     
 }
 
-.header-logo{
+.navbar{
+    margin-left: 15rem;
+    margin-top: 1.4rem;
+    margin-right: 7rem;    
+}
+
+.header-logo{    
     width: 10rem;
     left: 1rem;
     top : 0px;
-    position:fixed;
-}
-
-.nav{
-    margin-left:9rem;
-    margin-right :0.5rem; 
-}
-
-.nav-links{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-end;
-    min-width: 80%;
-    margin-top: 3rem;  
-}
-
-.nav-item{
-    text-align: right;
-}
-
-.nav-item-link{
-    padding : 10px;
-    padding-left: 4px;
-    padding-right: 4px;
-    margin:0.2rem;
-    margin-top: 10rem;
-    font-size: 1.1rem;
-    color: #646465;
-}
-
-.nav-item-link > strong{
-    font-weight: bold;
-}
-
-.nav-item-link:hover{
-    color: #F7931A;
-    font-weight: bold;    
-}
-
-.nav-item-link--bitcoin{
-    color:white;
-    font-weight: bold;
-    background:var(--orange);
-    border-radius: 1rem 1rem 1rem 1rem;
-    transition:all, 0s, 0.3s;
-}
-
-.nav-item-link--bitcoin:hover{
-    color:var(--orange);
-    background: white ;
-    border-radius: 1rem 1rem 1rem 1rem;
-}
-
-.nav-links-sub{
-    overflow :hidden;
-    max-height : 0 ;
-    max-width: 0;
-}
-
-.nav-item-link-sub:hover{
-    color: var(--orange);
-    font-weight: bold;
-}
-
-.nav-item-sub{
-    padding-top:20px;
-    background-color: white;
-}
-
-.nav-item-link-sub{
-    font-size: 1rem;
-    color: #646465;  
-}
-
-.nav-item--scroll:hover .nav-links-sub{
-    overflow :visible;
-    max-height : 50px ;
-    max-width: 20rem;
+    position:fixed;    
 }
 
 .header-img-scroll{
@@ -118,27 +48,11 @@ header{
     display:none;
 }
 
-.nav-mobile{
-    display:none;    
-}
-
 /*Configuration menu pour mobile*/
 @media (max-width: 900px){
-    .nav-item{
-        display:none;
-        max-height : 0px ;
-        max-width: 0rem;
-    }
-
-    .mobile:hover>.nav-mobile,.mobile:active>.nav-mobile{
-        display:block;
-        display:flex;
-        flex-direction: column;
-        align-items: flex-end;
-        text-align: right;
-        margin-top: 2.6rem;
-        margin-right:  2rem;
-        padding-top:0.5rem;
+    
+    .navbar{
+        margin-right: 0.5rem;    
     }
 
     .header-img-scroll{
@@ -150,59 +64,7 @@ header{
         display:block;
         max-height : 50rem ;
         max-width: 50rem;
-    }
-
-    .nav-mobile{
-        background-color: #f3f3f3;
-        width: 100%;
-        padding-bottom: 10px;
-    }
-
-    .nav-item-mobile{
-        text-align: right;
-        margin-top: 0.8rem;
-    }
-   
-    .nav-item-mobile-link{
-        color:#646465;
-        padding: 1.6rem;        
-    }
-
-    .nav-item-mobile-link > strong{
-        font-weight: bold;
-    }
-
-    .nav-item-mobile-link:hover{
-        color: var(--orange);
-    }
-
-    .nav-links-mobile-sub{
-        display:none;
-        max-height : 0 ;
-        max-width: 0;
-    }
-
-    .nav-item-mobile--scroll:hover .nav-links-mobile-sub{
-        display:inline;
-        padding-right: 2rem;
-
-    }
-
-    .nav-item-mobile--scroll:hover .nav-item--mobile-sub{
-        margin-right: 1.8rem;
-        padding-top: 1rem;
-        color:#646465;
-        font-size: 0.9rem;
-    }
-
-    .nav-item-mobile-link-sub:hover{
-        color : var(--orange);
-    }
-
-    .nav-item-link-mobile--bitcoin{
-        color:var(--orange);
-        font-weight: bold; 
-    }
+    }    
 }
 
 
@@ -538,8 +400,8 @@ header{
     }
 
 .mainHome-publication_contain-pictureLink{
-    display: flex;
-    justify-content: center;
+        display: flex;
+        justify-content: center;
 }
 
 .mainHome-publication_contain-list{
