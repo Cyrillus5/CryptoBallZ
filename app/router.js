@@ -2,10 +2,10 @@ var express = require('express');
 var router = express.Router();
 
 /// Get news.json
-const getNewsList = require('../news.json');
+const getNewsList = require('../public/json/news.json');
 
 /// Get faq.json
-const tableFaq = require('../faq.json')
+const tableFaq = require('../public/json/faq.json')
 
 router.get('/',(request, response) =>{
     response.render('index', {getNewsList});

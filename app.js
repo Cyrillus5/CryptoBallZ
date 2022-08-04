@@ -16,9 +16,6 @@ dayjs().format();
 app.set('view engine', 'ejs');
 app.set('views','./views/');
 
-/// Get faq.json
-const tableFaq = require('./faq.json')
-
 /// Creation du dossier public
 app.use(express.static('public'));
 
@@ -26,9 +23,6 @@ app.use(express.static('public'));
 const currentTime = new Date()
 const year = currentTime.getFullYear()
 app.locals.currentYear = year;
-
-/// Get news.json
-const getNewsList = require('./news.json');
 
 /// Implementation des routes via le router
 app.use(router);
