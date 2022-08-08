@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <%- include('partials/header') %>
+    <title>Le Bitcoin _ CryptoBallZ </title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-container">
+                
+                <!-- the menu -->
+                <%- include('partials/menu') %>             
+                
+            </div>    
+        </header>
+        <main class="mainHome">
+            <h1 style="padding-top:5rem; text-align:center; font-size: 2rem;">Espace Admin</h1>
+            <form method="post">
+                <h2>Vignette Article</h2>
+                <input class="input" type="text" name="vignetteImage" placeholder="Chemin de l'image">
+                <input class="input" type="text" name="vignetteTitle" placeholder="Titre Vignette">
+                <textarea class="textarea" placeholder="4 lignes max" rows="3" name="vignetteIntro"></textarea>
+                <h2>Page Article</h2>
+                <input class="input" type="text" name="articleTitle1" placeholder="Titre 1">
+                <input class="input" type="text" name="articleIntro" placeholder="Intro">
+                <input class="input" type="text" name="articleAuthor" placeholder="Author">
+                <input class="input" type="text" name="articleDate" placeholder="Date">
+                <input class="input" type="text" name="articleImage" placeholder="Chemin de l'image">
+                <input class="input" type="text" name="articleTitle2" placeholder="Titre 2">
+                <textarea class="textarea" placeholder="10 lines of textarea" rows="10" name="articleContainer1"></textarea>
+                    <!-- Encart Binance -->
+                    <div class="control">
+                        <label class="radio">Binance
+                        <input type="radio" name="binance">
+                        Yes
+                        </label>
+                        <label class="radio">
+                        <input type="radio" name="binance">
+                        No
+                        </label>
+                    </div>
+                    <!-- Encart Crypto.com -->
+                    <div class="control">
+                        <label class="radio">Crypto.com
+                        <input type="radio" name="crypto">
+                        Yes
+                        </label>
+                        <label class="radio">
+                        <input type="radio" name="crypto">
+                        No
+                        </label>
+                    </div>
+                    <!-- Encart FTX-->
+                    <div class="control">
+                        <label class="radio">FTX
+                        <input type="radio" name="ftx">
+                        Yes
+                        </label>
+                        <label class="radio">
+                        <input type="radio" name="ftx">
+                        No
+                        </label>
+                    </div>
+                <input class="input" type="text" name="articleTitle2" placeholder="Titre 2">
+                <textarea class="textarea" placeholder="10 lines of textarea" rows="10" name="articleContainer2"></textarea>
+                <!-- Encart Binance -->
+                <div class="control">
+                    <label class="radio">Binance
+                    <input type="radio" name="binance">
+                    Yes
+                    </label>
+                    <label class="radio">
+                    <input type="radio" name="binance">
+                    No
+                    </label>
+                </div>
+                <!-- Encart Crypto.com -->
+                <div class="control">
+                    <label class="radio">Crypto.com
+                    <input type="radio" name="crypto">
+                    Yes
+                    </label>
+                    <label class="radio">
+                    <input type="radio" name="crypto">
+                    No
+                    </label>
+                </div>
+                <!-- Encart FTX-->
+                <div class="control">
+                    <label class="radio">FTX
+                    <input type="radio" name="ftx">
+                    Yes
+                    </label>
+                    <label class="radio">
+                    <input type="radio" name="ftx">
+                    No
+                    </label>
+                </div>
+            </form>            
+        </main>
+    </div>
+    </body>
+    <footer>
+        <%- include ('partials/footer') %>
+        <script src="../js/buyBitcoin.js"></script>
+    </footer>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <%- include('partials/header') %>
+    <title>Le Bitcoin _ CryptoBallZ </title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-container">
+                
+                <!-- the menu -->
+                <%- include('partials/menu') %>             
+                
+            </div>    
+        </header>
+        <main class="mainHome">
+            <form action="" method="POST" class="form-signin">
+                <article class="mainHome-header_article">
+                    <div class="field">
+                        <p class="control has-icons-left has-icons-right">
+                        <input class="input" type="email" placeholder="Email" name="email">
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <span class="icon is-small is-right">
+                            <i class="fas fa-check"></i>
+                        </span>
+                        </p>
+                    </div>
+                    <div class="field">
+                        <p class="control has-icons-left">
+                        <input class="input" type="password" placeholder="Password" name="password">
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-lock"></i>
+                        </span>
+                        </p>
+                    </div>
+                    <div class="field">
+                        <p class="control">
+                        <button class="button is-success">
+                            Login
+                        </button>
+                        </p>
+                    </div>
+                </article> 
+            </form>            
+        </main>
+    </div>
+    </body>
+    <footer>
+        <%- include ('partials/footer') %>
+        <script src="../js/buyBitcoin.js"></script>
+    </footer>
+</html>

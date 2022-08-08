@@ -67,6 +67,10 @@ header{
     }    
 }
 
+/* Page admin */
+.field{
+    margin-top: 2rem;
+}
 
 /* Mis en forme du main de l'accueil */
 
@@ -638,13 +642,15 @@ header{
 /* Section Warning */
 .warningText{
     text-align: justify;
-    color: white;
-    font-size: 00.7rem;
-    background-color: rgb(184, 183, 183);
-    padding: 1rem;
+    color: var(--gristexte);
+    font-size: 00.7rem;    
+    padding: 0.5 rem;
     margin:1rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
     padding-bottom: 0.5rem;
     line-height: 1.5rem;
+    border-bottom : 1px solid lightgray
 }
 
 /* Footer */

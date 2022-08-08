@@ -1,6 +1,13 @@
 var express = require('express');
 var router = express.Router();
 
+// Get controllers
+const userController = require('./controller/userController');
+const adminController = require('./controller/adminController');
+
+// Get middlewares
+const adminMiddleware = require('./middlewares/adminMiddleware');
+
 /// Get news.json
 const getNewsList = require('../public/json/news.json');
 
@@ -46,9 +53,19 @@ router.get("/bitcoin/comment-acheter-du-bitcoin/acheter-du-bitcoin-sur-Crypto.co
     response.render("bitcoin/acheter-bitcoin-crypto");
 });
 
-
 router.get("/faq",(request, response) =>{
     response.render("faq", {tableFaq});
+});
+
+/// ******Authentification********
+router.get("/login", userController.showLogin);
+router.post('/login', userController.doLogin);
+
+router.get('/admin', adminMiddleware, adminController.showAdmin);
+
+/// *** Erreur 403 *** ///
+router.get('/403',(request, response) =>{
+    response.render('403');
 });
 
 module.exports = router;
