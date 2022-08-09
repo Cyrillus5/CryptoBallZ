@@ -15,18 +15,25 @@
             </div>    
         </header>
         <main class="mainHome">
-            <h1 style="padding-top:5rem; text-align:center; font-size: 2rem;">Espace Admin</h1>
-            <form method="post">
+            <h1 style="padding-top:5rem; text-align:center; font-size: 2rem;">Espace Administrateur</h1>
+            <form action="/admin" enctype="multipart/form-data" method="POST"> 
+                <h2>SEO</h2>
+                <input class="input" type="text" name="metaDescription" placeholder="contenu pour la balise meta description">
+
                 <h2>Vignette Article</h2>
-                <input class="input" type="text" name="vignetteImage" placeholder="Chemin de l'image">
+                <input type="file" name="vignetteAndArticleImages" multiple/>
+                <input class="input" type="text" name="vignetteImageName" placeholder="Titre de l'image de la vignette">
+                <input class="input" type="text" name="altVignetteImage" placeholder="alt de l'image de la vignette">
                 <input class="input" type="text" name="vignetteTitle" placeholder="Titre Vignette">
                 <textarea class="textarea" placeholder="4 lignes max" rows="3" name="vignetteIntro"></textarea>
+                
                 <h2>Page Article</h2>
+                <input class="input" type="text" name="articleImageName" placeholder="Titre de l'image de l'article">
+                <input class="input" type="text" name="altArticleImage" placeholder="alt de l'image de l'article">
                 <input class="input" type="text" name="articleTitle1" placeholder="Titre 1">
                 <input class="input" type="text" name="articleIntro" placeholder="Intro">
                 <input class="input" type="text" name="articleAuthor" placeholder="Author">
                 <input class="input" type="text" name="articleDate" placeholder="Date">
-                <input class="input" type="text" name="articleImage" placeholder="Chemin de l'image">
                 <input class="input" type="text" name="articleTitle2" placeholder="Titre 2">
                 <textarea class="textarea" placeholder="10 lines of textarea" rows="10" name="articleContainer1"></textarea>
                     <!-- Encart Binance -->
@@ -62,47 +69,54 @@
                         No
                         </label>
                     </div>
-                <input class="input" type="text" name="articleTitle2" placeholder="Titre 2">
+                <input class="input" type="text" name="articleTitle3" placeholder="Titre 3">
                 <textarea class="textarea" placeholder="10 lines of textarea" rows="10" name="articleContainer2"></textarea>
                 <!-- Encart Binance -->
                 <div class="control">
                     <label class="radio">Binance
-                    <input type="radio" name="binance">
+                    <input type="radio" name="binance2">
                     Yes
                     </label>
                     <label class="radio">
-                    <input type="radio" name="binance">
+                    <input type="radio" name="binance2">
                     No
                     </label>
                 </div>
                 <!-- Encart Crypto.com -->
                 <div class="control">
                     <label class="radio">Crypto.com
-                    <input type="radio" name="crypto">
+                    <input type="radio" name="crypto2">
                     Yes
                     </label>
                     <label class="radio">
-                    <input type="radio" name="crypto">
+                    <input type="radio" name="crypto2">
                     No
                     </label>
                 </div>
                 <!-- Encart FTX-->
                 <div class="control">
                     <label class="radio">FTX
-                    <input type="radio" name="ftx">
+                    <input type="radio" name="ftx2">
                     Yes
                     </label>
                     <label class="radio">
-                    <input type="radio" name="ftx">
+                    <input type="radio" name="ftx2">
                     No
                     </label>
                 </div>
+                <div class="field is-grouped">
+                  <div class="control">
+                    <button class="button is-link">Submit</button>
+                  </div>
+                  <div class="control">
+                    <button class="button is-link is-light">Cancel</button>
+                  </div>
+                </div>  
             </form>            
         </main>
     </div>
     </body>
     <footer>
-        <%- include ('partials/footer') %>
-        <script src="../js/buyBitcoin.js"></script>
+        <%- include ('partials/footer') %>        
     </footer>
 </html>

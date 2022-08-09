@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+const multer = require('multer');
 
 // Get controllers
 const userController = require('./controller/userController');
@@ -13,6 +14,17 @@ const getNewsList = require('../public/json/news.json');
 
 /// Get faq.json
 const tableFaq = require('../public/json/faq.json')
+
+// Creation dossier stockage des images
+var storage = multer.diskStorage({
+    destination: function (req, file, cb) {
+      cb(null, './stockageImages/')
+    },
+    filename: function (req, file, cb) {
+      cb(null, file.originalname)
+    }
+  }) 
+  var upload = multer({ storage: storage });
 
 router.get('/',(request, response) =>{
     response.render('index', {getNewsList});
@@ -62,6 +74,7 @@ router.get("/login", userController.showLogin);
 router.post('/login', userController.doLogin);
 
 router.get('/admin', adminMiddleware, adminController.showAdmin);
+router.post('/admin', adminMiddleware, upload.array('vignetteAndArticleImages', 12), adminController.recordNews);
 
 /// *** Erreur 403 *** ///
 router.get('/403',(request, response) =>{
