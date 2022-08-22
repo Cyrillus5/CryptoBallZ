@@ -24,7 +24,8 @@ header{
     border-bottom: 1px solid lightgray; 
     background-color: white;
     position: fixed;
-    width: 100%;     
+    width: 100%; 
+    z-index: 1;    
 }
 
 .navbar{
@@ -70,6 +71,9 @@ header{
 /* Page admin */
 .field{
     margin-top: 2rem;
+}
+.consignes{
+    font-size: 0.8rem;
 }
 
 /* Mis en forme du main de l'accueil */
@@ -369,39 +373,28 @@ header{
     background-repeat: no-repeat;
 }
 
-.mainHome-publication_contain-img--microstrategy{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-image : url("../img/le bitcoin/MicroStrategy_Bitcoin.jfif");
-    background-repeat: no-repeat;
-}
-
 .mainHome-publication_contain-img-picture{
     margin: auto;
     max-width: 20rem;
 }
 
+.mainHome-publication_contain-img-picture-bandeau{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+}
+
+
 .copy-twitter-tweet{
+    display: flex;
     margin: auto;
-    margin-left: 1rem;
-    width: 8%;    
+    width: 100%; 
+    max-width: 300px;  
+    flex-direction: column; 
+    align-items: center;
 }
-
-.mainHome-publication_contain-media{
-    margin: auto;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-/* Mise en forme des vues YouTube _ pour mobile */
-@media (max-width: 900px){
-    .mainHome-publication_contain-media{
-        width: 100%;
-        margin: auto;
-    }      
-    }
 
 .mainHome-publication_contain-pictureLink{
         display: flex;

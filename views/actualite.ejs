@@ -27,6 +27,16 @@
                 <h2 class="mainHome-body-title">Pour tout savoir sur l’univers du Bitcoin, de l’Ether, des cryptomonnaies, des NFT et de la finance décentralisée, lisez nos derniers articles d’actualité !</h2>
                     <div id="actuInfoMiniature" class="actuInfoMiniature">
                         <!-- publication des news-->
+                        <% for(const news of getNews){ %>
+                            <div class="actuInfoMiniature-news">
+                                <a href="/actualite/<%= news.titleVignette %>" title="<%= news.altImageArticle %>"><img class="actuInfoMiniature-news_img" alt="<%= news.altImageArticle %>" src="/img/news/<%= news.imageVignette %>"></a>
+                                
+                                    <div class="actuInfoMiniature-news_container">
+                                        <a href="/actualite/<%= news.titleVignette %>" title="<%= news.altImageArticle %>"><h3 class="actuInfoMiniature-news_container-title"><%= news.titleVignette %></h3></a>
+                                        <a href="/actualite/<%= news.titleVignette %>" title="<%= news.altImageVignette %>"><p class="actuInfoMiniature-news_container-text"><%= news.introVignette %></p></a>
+                                    </div>
+                            </div>
+                        <% } %>
                         <% for (const getListNews of getNewsList){ %>
                             <div class="actuInfoMiniature-news">
                                 <a href="<%= getListNews.link %>" title="<%= getListNews.alt %>"><img class="actuInfoMiniature-news_img" alt="<%= getListNews.alt %>" src="<%= getListNews.image %>"></a>

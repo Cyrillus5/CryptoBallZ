@@ -17,18 +17,21 @@
         <main class="mainHome">
             <h1 style="padding-top:5rem; text-align:center; font-size: 2rem;">Espace Administrateur</h1>
             <form action="/admin" enctype="multipart/form-data" method="POST"> 
+                <br>
                 <h2>SEO</h2>
                 <input class="input" type="text" name="metaDescription" placeholder="contenu pour la balise meta description">
-
+                <input class="input" type="text" name="pageTitle" placeholder="titre de la page avec - entre les mots">
+                <br><br>
                 <h2>Vignette Article</h2>
+                <p class="consignes"> L'image doit avoir une largeur minimale de 696 pixels pour la page Article.</p>                
                 <input type="file" name="vignetteAndArticleImages" multiple/>
                 <input class="input" type="text" name="vignetteImageName" placeholder="Titre de l'image de la vignette">
                 <input class="input" type="text" name="altVignetteImage" placeholder="alt de l'image de la vignette">
                 <input class="input" type="text" name="vignetteTitle" placeholder="Titre Vignette">
                 <textarea class="textarea" placeholder="4 lignes max" rows="3" name="vignetteIntro"></textarea>
-                
+                <br>
                 <h2>Page Article</h2>
-                <input class="input" type="text" name="articleImageName" placeholder="Titre de l'image de l'article">
+                <input class="input" type="text" name="articleImageName" placeholder="Titre de l'image de l'article avec extension">
                 <input class="input" type="text" name="altArticleImage" placeholder="alt de l'image de l'article">
                 <input class="input" type="text" name="articleTitle1" placeholder="Titre 1">
                 <input class="input" type="text" name="articleIntro" placeholder="Intro">
