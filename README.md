@@ -7,6 +7,7 @@ The word "CryptoBallZ" is a merge of two of my passions : the cryptocurrencies a
 ## Development of CryptoBallZ
 I created this website alone only on Vanilla JS with the JavaScript runtime NodeJS.
 I used differents tools :
+  * ExpressJS
   * Sequelize
   * PostgreSQL
   * bcrypt
